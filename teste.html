@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Momento feliz</title>
+    <meta name="description" content="Agora, um pouco de alegria para melhorar o seu dia">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .light {
+            position: fixed;
+            width: 150px;
+            height: 150px;
+            background-color: pink;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            animation: rotateColor 10s infinite;
+            pointer-events: none;
+            z-index: 1000;
+        }
+
+        .top-left { top: 20px; left: 20px; }
+        .top-right { top: 20px; right: 20px; }
+        .bottom-left { bottom: 20px; left: 20px; }
+        .bottom-right { bottom: 20px; right: 20px; }
+
+        @keyframes rotateColor {
+            0%, 50%, 100% { background-color: red; }
+            25%, 75% { background-color: green; }
+        }
+
+        .images, .audio, .video {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .images img {
+            max-width: 150px;
+            height: 100px;
+            border-radius: 10px;
+        }
+
+        .video video {
+            width: 200%;
+            max-width: 560px;
+        }
+    </style>
+</head>
+<body>
+    <div class="light top-left"></div>
+    <div class="light top-right"></div>
+    <div class="light bottom-left"></div>
+    <div class="light bottom-right"></div>
+
+    <h1>SEU DIA ESTÁ RUIM?</h1>
+    <p>Então, nada melhor do que ver algo bonito para melhorá-lo!</p>
+
+    <div class="images">
+        <img src="sagres.jpeg" alt="Descrição da Imagem 1">
+        <img src="pastel.jpeg" alt="Descrição da Imagem 2">
+        <img src="cris.jpeg" alt="Descrição da Imagem 3">
+        <img src="carro.jpeg" alt="Descrição da Imagem 4">
+    </div>
+
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-C6TVJFK786');
+    </script>
+</body>
+</html>
